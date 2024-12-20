@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey on Financial Impact of Idle Gold Holdings in Indian Households</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1518972559570-046d1f3f760f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080'); /* Subtle gold background */
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container for content */
+        .container {
+            background: rgba(255, 255, 255, 0.9); /* Transparent white box */
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Header Styling */
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 28px;
+            color: gold;
+            margin: 0;
+        }
+
+        header img {
+            width: 80px;
+            margin: 10px auto;
+        }
+
+        /* Main Content Styling */
+        main {
+            text-align: center;
+        }
+
+        main p {
+            font-size: 16px;
+            margin: 15px 0;
+        }
+
+        /* Button Styling */
+        .button {
+            display: inline-block;
+            background-color: gold;
+            color: white;
+            padding: 12px 25px;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: darkgoldenrod;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555555;
+        }
+
+        /* Image Section Styling */
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Gold_nugget_(Australia)_01.jpg/800px-Gold_nugget_(Australia)_01.jpg" alt="Gold Nugget">
+            <h1>Survey on Financial Impact of Idle Gold Holdings</h1>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <p>Thank you for taking part in our survey! Your feedback is invaluable in helping us understand the financial impact of idle gold holdings.</p>
+            <p>Please share this survey with others to help us gather more insights:</p>
+            
+            <!-- Share Button -->
+            <button class="button" onclick="shareSurvey()">Share Survey</button>
+            
+            <!-- Image Section -->
+            <div class="image-section">
+                <img src="https://images.unsplash.com/photo-1541690251646-2b1c7c6d7f1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Gold Coins and Bars">
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>Your participation makes a difference. Thank you!</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript for Share Button -->
+    <script>
+        function shareSurvey() {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Survey on Gold Holdings',
+                    text: 'Participate in this survey on the financial impact of idle gold holdings in Indian households.',
+                    url: 'https://yourformlink.com'
+                }).then(() => {
+                    alert('Thanks for sharing!');
+                }).catch((err) => {
+                    console.error('Error sharing:', err);
+                });
+            } else {
+                alert('Sharing not supported. Please copy and share the link manually.');
+            }
+        }
+    </script>
+</body>
+</html>
